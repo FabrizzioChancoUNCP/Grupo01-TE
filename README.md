@@ -21,6 +21,7 @@ python \-m pytest \-q
 
 ### Levantar la API
 
+
 Desde la raíz del proyecto:
 
 uvicorn src.api:app \--reload
