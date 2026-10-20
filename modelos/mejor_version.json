@@ -1,0 +1,7 @@
+{
+  "version": "regresion_logistica",
+  "macro_f1_validacion": 0.6514,
+  "recall_dropout_validacion": 0.6432,
+  "criterio": "mayor macro-F1 en validación",
+  "fecha_promocion": "2026-10-18T09:30:11"
+}

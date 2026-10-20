@@ -1,0 +1,306 @@
+{
+  "version": "regresion_logistica",
+  "fecha": "2026-10-18T09:30:09",
+  "datos": {
+    "archivo": "data.csv",
+    "filas_train": 3096,
+    "filas_val": 664,
+    "filas_test": 664,
+    "semilla": 42
+  },
+  "parametros": {
+    "arquitectura": "LogisticRegression",
+    "preprocesador": "StandardScaler",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "metricas_validacion": {
+    "macro_f1": 0.6514,
+    "recall_por_clase": {
+      "Dropout": 0.6432,
+      "Enrolled": 0.5798,
+      "Graduate": 0.759
+    },
+    "matriz_confusion": {
+      "orden_clases": [
+        "Dropout",
+        "Enrolled",
+        "Graduate"
+      ],
+      "valores": [
+        [
+          137,
+          53,
+          23
+        ],
+        [
+          22,
+          69,
+          28
+        ],
+        [
+          11,
+          69,
+          252
+        ]
+      ]
+    }
+  },
+  "metricas_prueba": {
+    "macro_f1": 0.6537,
+    "recall_por_clase": {
+      "Dropout": 0.5915,
+      "Enrolled": 0.6723,
+      "Graduate": 0.75
+    },
+    "matriz_confusion": {
+      "orden_clases": [
+        "Dropout",
+        "Enrolled",
+        "Graduate"
+      ],
+      "valores": [
+        [
+          126,
+          70,
+          17
+        ],
+        [
+          18,
+          80,
+          21
+        ],
+        [
+          6,
+          77,
+          249
+        ]
+      ]
+    }
+  },
+  "promovida": true,
+  "variables": [
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Tuition fees up to date",
+    "Debtor",
+    "Scholarship holder",
+    "Age at enrollment",
+    "Admission grade"
+  ],
+  "auditoria_validacion": {
+    "Gender": {
+      "0": {
+        "n": 444,
+        "recall_dropout": 0.5833,
+        "macro_f1": 0.6671,
+        "advertencia": null
+      },
+      "1": {
+        "n": 220,
+        "recall_dropout": 0.7048,
+        "macro_f1": 0.5936,
+        "advertencia": null
+      }
+    },
+    "Scholarship holder": {
+      "0": {
+        "n": 499,
+        "recall_dropout": 0.6702,
+        "macro_f1": 0.6454,
+        "advertencia": null
+      },
+      "1": {
+        "n": 165,
+        "recall_dropout": 0.4091,
+        "macro_f1": 0.563,
+        "advertencia": null
+      }
+    },
+    "International": {
+      "0": {
+        "n": 640,
+        "recall_dropout": 0.6293,
+        "macro_f1": 0.6483,
+        "advertencia": null
+      },
+      "1": {
+        "n": 24,
+        "recall_dropout": 1.0,
+        "macro_f1": 0.7259,
+        "advertencia": "n<30: interpretar con cautela"
+      }
+    },
+    "Educational special needs": {
+      "0": {
+        "n": 657,
+        "recall_dropout": 0.6462,
+        "macro_f1": 0.6536,
+        "advertencia": null
+      },
+      "1": {
+        "n": 7,
+        "recall_dropout": 0.0,
+        "macro_f1": 0.3016,
+        "advertencia": "n<30: interpretar con cautela"
+      }
+    },
+    "Debtor": {
+      "0": {
+        "n": 586,
+        "recall_dropout": 0.6131,
+        "macro_f1": 0.6501,
+        "advertencia": null
+      },
+      "1": {
+        "n": 78,
+        "recall_dropout": 0.7556,
+        "macro_f1": 0.5887,
+        "advertencia": null
+      }
+    },
+    "Tuition fees up to date": {
+      "0": {
+        "n": 79,
+        "recall_dropout": 0.9851,
+        "macro_f1": 0.458,
+        "advertencia": null
+      },
+      "1": {
+        "n": 585,
+        "recall_dropout": 0.4863,
+        "macro_f1": 0.6145,
+        "advertencia": null
+      }
+    },
+    "grupo_edad": {
+      "21-25": {
+        "n": 114,
+        "recall_dropout": 0.7,
+        "macro_f1": 0.6679,
+        "advertencia": null
+      },
+      "<=20": {
+        "n": 396,
+        "recall_dropout": 0.4815,
+        "macro_f1": 0.6239,
+        "advertencia": null
+      },
+      ">25": {
+        "n": 154,
+        "recall_dropout": 0.7609,
+        "macro_f1": 0.5749,
+        "advertencia": null
+      }
+    }
+  },
+  "auditoria_prueba": {
+    "Gender": {
+      "0": {
+        "n": 426,
+        "recall_dropout": 0.5534,
+        "macro_f1": 0.6412,
+        "advertencia": null
+      },
+      "1": {
+        "n": 238,
+        "recall_dropout": 0.6273,
+        "macro_f1": 0.6623,
+        "advertencia": null
+      }
+    },
+    "Scholarship holder": {
+      "0": {
+        "n": 507,
+        "recall_dropout": 0.6091,
+        "macro_f1": 0.633,
+        "advertencia": null
+      },
+      "1": {
+        "n": 157,
+        "recall_dropout": 0.375,
+        "macro_f1": 0.6025,
+        "advertencia": null
+      }
+    },
+    "International": {
+      "0": {
+        "n": 645,
+        "recall_dropout": 0.5942,
+        "macro_f1": 0.6565,
+        "advertencia": null
+      },
+      "1": {
+        "n": 19,
+        "recall_dropout": 0.5,
+        "macro_f1": 0.5469,
+        "advertencia": "n<30: interpretar con cautela"
+      }
+    },
+    "Educational special needs": {
+      "0": {
+        "n": 657,
+        "recall_dropout": 0.5877,
+        "macro_f1": 0.6529,
+        "advertencia": null
+      },
+      "1": {
+        "n": 7,
+        "recall_dropout": 1.0,
+        "macro_f1": 0.7222,
+        "advertencia": "n<30: interpretar con cautela"
+      }
+    },
+    "Debtor": {
+      "0": {
+        "n": 575,
+        "recall_dropout": 0.5309,
+        "macro_f1": 0.6337,
+        "advertencia": null
+      },
+      "1": {
+        "n": 89,
+        "recall_dropout": 0.7843,
+        "macro_f1": 0.6674,
+        "advertencia": null
+      }
+    },
+    "Tuition fees up to date": {
+      "0": {
+        "n": 81,
+        "recall_dropout": 1.0,
+        "macro_f1": 0.3091,
+        "advertencia": null
+      },
+      "1": {
+        "n": 583,
+        "recall_dropout": 0.3916,
+        "macro_f1": 0.6033,
+        "advertencia": null
+      }
+    },
+    "grupo_edad": {
+      "21-25": {
+        "n": 139,
+        "recall_dropout": 0.6222,
+        "macro_f1": 0.624,
+        "advertencia": null
+      },
+      "<=20": {
+        "n": 368,
+        "recall_dropout": 0.4321,
+        "macro_f1": 0.6313,
+        "advertencia": null
+      },
+      ">25": {
+        "n": 157,
+        "recall_dropout": 0.7241,
+        "macro_f1": 0.6445,
+        "advertencia": null
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+version,macro_f1_val,recall_Dropout,recall_Enrolled,recall_Graduate
+regresion_logistica,0.6514,0.6432,0.5798,0.759
+mlp_base,0.6348,0.7324,0.2521,0.9066
+mlp_regularizada,0.6134,0.7465,0.1765,0.9277
+mlp_profunda,0.6069,0.7371,0.1597,0.9398
+dummy,0.2222,0.0,0.0,1.0

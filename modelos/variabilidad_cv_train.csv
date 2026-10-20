@@ -1,0 +1,6 @@
+version,macro_f1_cv_media,macro_f1_cv_std,n_evaluaciones
+regresion_logistica,0.6623,0.0212,25
+mlp_base,0.6284,0.0199,25
+mlp_profunda,0.5928,0.0311,25
+mlp_regularizada,0.5898,0.0296,25
+dummy,0.2219,0.0001,25

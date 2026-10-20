@@ -1,0 +1,61 @@
+{
+  "version": "dummy",
+  "fecha": "2026-10-18T09:30:09",
+  "datos": {
+    "archivo": "data.csv",
+    "filas_train": 3096,
+    "filas_val": 664,
+    "filas_test": 664,
+    "semilla": 42
+  },
+  "parametros": {
+    "arquitectura": "DummyClassifier",
+    "preprocesador": "StandardScaler",
+    "random_state": null,
+    "strategy": "prior"
+  },
+  "metricas_validacion": {
+    "macro_f1": 0.2222,
+    "recall_por_clase": {
+      "Dropout": 0.0,
+      "Enrolled": 0.0,
+      "Graduate": 1.0
+    },
+    "matriz_confusion": {
+      "orden_clases": [
+        "Dropout",
+        "Enrolled",
+        "Graduate"
+      ],
+      "valores": [
+        [
+          0,
+          0,
+          213
+        ],
+        [
+          0,
+          0,
+          119
+        ],
+        [
+          0,
+          0,
+          332
+        ]
+      ]
+    }
+  },
+  "metricas_prueba": null,
+  "promovida": false,
+  "variables": [
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Tuition fees up to date",
+    "Debtor",
+    "Scholarship holder",
+    "Age at enrollment",
+    "Admission grade"
+  ]
+}

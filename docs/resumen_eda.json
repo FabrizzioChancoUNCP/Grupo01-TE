@@ -1,0 +1,67 @@
+{
+  "filas": 4424,
+  "columnas": 37,
+  "nulos_por_columna": {},
+  "duplicados_exactos": 0,
+  "perfiles_con_etiqueta_conflictiva": 0,
+  "clases": {
+    "Graduate": 2209,
+    "Dropout": 1421,
+    "Enrolled": 794
+  },
+  "proporcion_clases": {
+    "Graduate": 0.4993,
+    "Dropout": 0.3212,
+    "Enrolled": 0.1795
+  },
+  "accuracy_si_siempre_clase_mayoritaria": 0.4993,
+  "fuera_de_rango_dominio": {
+    "Curricular units 1st sem (enrolled)": 0,
+    "Curricular units 1st sem (approved)": 0,
+    "Curricular units 1st sem (grade)": 0,
+    "Tuition fees up to date": 0,
+    "Debtor": 0,
+    "Scholarship holder": 0,
+    "Age at enrollment": 0,
+    "Admission grade": 0
+  },
+  "aprobadas_mayor_que_inscritas_s1": 0,
+  "sin_unidades_inscritas_s1": 180,
+  "promedio_cero_con_unidades_s1": 538,
+  "perfiles_conflictivos_8_variables": 6,
+  "clases_sin_unidades_s1": {
+    "Dropout": 77,
+    "Graduate": 75,
+    "Enrolled": 28
+  },
+  "tasa_dropout_por_unidades_aprobadas": {
+    "1er_semestre": {
+      "(-1, 0]": 0.7939,
+      "(0, 2]": 0.7143,
+      "(2, 4]": 0.4231,
+      "(4, 6]": 0.1383,
+      "(6, 100]": 0.1057
+    },
+    "2do_semestre_FUGA": {
+      "(-1, 0]": 0.8356,
+      "(0, 2]": 0.6474,
+      "(2, 4]": 0.3419,
+      "(4, 6]": 0.1082,
+      "(6, 100]": 0.0822
+    }
+  },
+  "tasa_dropout_por_variable": {
+    "Tuition fees up to date": {
+      "0": 0.8655,
+      "1": 0.2474
+    },
+    "Debtor": {
+      "0": 0.2828,
+      "1": 0.6203
+    },
+    "Scholarship holder": {
+      "0": 0.3871,
+      "1": 0.1219
+    }
+  }
+}
