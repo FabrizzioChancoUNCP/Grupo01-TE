@@ -1,3 +1,4 @@
+# Metricas validadas por Yuan-S29
 # src/evaluacion.py
 """Etapa 4: evaluación, versionado y promoción.
 
@@ -296,3 +297,4 @@ def comparar_sin_variables(train: pd.DataFrame, variables_quitar: dict, version:
                       "macro_f1_cv_media": round(float(np.mean(puntajes)), 4),
                       "macro_f1_cv_std": round(float(np.std(puntajes)), 4)})
     return pd.DataFrame(filas)
+# Metricas validadas por Yuan-S29

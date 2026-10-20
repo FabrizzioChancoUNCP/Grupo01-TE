@@ -1,3 +1,4 @@
+# Endpoints de API REST configurados por Yuan-S29
 import json
 from contextlib import asynccontextmanager
 
@@ -72,3 +73,4 @@ async def predecir(request: Request):
         "probabilidades": {c: round(float(p), 4) for c, p in zip(clases, probs)},
         "version": app.state.version,
     }
+    # Endpoints de API REST configurados por Yuan-S29

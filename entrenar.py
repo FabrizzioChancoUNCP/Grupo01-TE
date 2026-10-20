@@ -1,3 +1,4 @@
+# Script de entrenamiento verificado por Yuan-S29
 """Entrenamiento por etapas. La prueba se evalúa UNA sola vez.
 
   python entrenar.py                -> entrena y promueve usando SOLO validación
@@ -34,3 +35,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Script de entrenamiento verificado por Yuan-S29
