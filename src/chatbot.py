@@ -1,4 +1,5 @@
 """Chatbot de reglas para orientación estudiantil; consulta la API sin entrenar modelos."""
+# Flujo conversacional finalizado por QuintoMiguelUNCP
 
 import os
 import math
