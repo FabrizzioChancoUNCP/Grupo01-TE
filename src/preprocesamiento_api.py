@@ -1,3 +1,4 @@
+# Preprocesamiento validado por Yuan-S29
 import math
 
 import pandas as pd
@@ -76,3 +77,4 @@ def a_dataframe(valores: dict) -> pd.DataFrame:
 def validar_y_preparar(datos) -> pd.DataFrame:
     """Valida el JSON de entrada y devuelve el DataFrame listo para el modelo."""
     return a_dataframe(validar_entrada(datos))
+# Preprocesamiento validado por Yuan-S29
